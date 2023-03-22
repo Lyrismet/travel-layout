@@ -1,0 +1,261 @@
+*{
+	margin: 0;
+	padding: 0;
+	background-color: #282A2DFF;
+}
+
+body{
+	font: 400 16px 'Segoe', sans-serif;
+}
+.page{
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+.main{
+	width: 1280px;
+}
+h1, h2, p, div, a{
+	color: #EFEFEFFF;
+	text-decoration: none;
+
+}
+h1{
+	font: 800 48px 'Tahoma';
+}
+.header{
+	display: flex;
+	justify-content: space-between;
+}
+.header__logo{
+	display: flex;
+	align-items: center;
+	padding-top: 29px;
+	padding-left: 48px;
+}
+.header__logo-text {
+    padding-left: 15px;
+    padding-top: 10px;
+    font: 800 22px 'Arial', sans-serif;
+}
+.lang-chosen{
+	background-image: linear-gradient(currentColor, currentColor);
+    background-position: 50% 100%;
+    background-size: 100% 2px;
+}
+.lang-chosen, .lang{
+	margin: 7px;
+}
+.header__lang{
+	font: 400 25px 'Candara', sans-serif;
+	margin-top: 44px;
+	margin-right: 42px;
+}
+a{
+	text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .2s;
+}
+a:hover {
+    background-size: 100% 2px;
+}
+
+/*Первая секция*/
+
+.main__section-title{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 60px;
+	padding-left: 150px;
+	padding-right: 150px;
+}
+.h1-title{
+	font-size: 95px;
+	text-align: center;
+	margin-top: 2px;
+	padding: 23px;
+	width: 80%;
+	line-height: 1.05;
+	letter-spacing: 2.2px;
+}
+.image{
+	max-width: 100%;
+	position: relative;
+}
+h3{
+	margin-top: 12px;
+	margin-bottom: 66px;
+	text-align: center;
+	width: 60%;
+	font-size: 30px;
+	font-weight: 400;
+	letter-spacing: 1.5px;
+}
+.image__sign{
+	font: 10px 'Trebuchet MS', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2.2px;
+	margin-top: 6px;
+}
+
+/*Вторая секция*/
+
+.main__section-gallery{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	text-align: left;
+	margin-top: 24px;
+	margin-bottom: 84px;
+}
+.section-gallery__title{
+	font: 800 3.3rem 'Tahoma', sans-serif;
+	margin-bottom: 39px;
+}
+.section-gallery__text{
+	width: 54%;
+	line-height: 1.6em;
+	letter-spacing: 0.5px;
+	margin-bottom: 37px;
+}
+.section-gallery__footnote{
+	width: 54%;
+	font-size: 0.75em;
+	line-height: 1.45em;
+	margin-bottom: 86px;
+}
+.section-gallery__gallery{
+	display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 22px;
+    margin: 0 49px;
+}
+.gallery__photo{
+	object-fit: contain;
+    object-position: center;
+    margin: -3px 0px;
+}
+img{
+	object-fit: contain;
+	object-position: center;
+	width: 100%;
+	height: 100%;
+}
+
+/*Третья секция*/
+.main__section-carelia{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin: 0px 11.8%;
+}
+.section-carelia__title-with-photo{
+	width: 47%;
+}
+.link-text__url{
+	margin-bottom: 2px;
+	font: 13px 'Segoe', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2.2px;
+	color: #c2c1c0;
+	margin-top: 41px;
+}
+.section-carelia__link-text{
+	width: 49%;
+	display: flex;
+	flex-direction: column;
+}
+.title-with-photo__title{
+	font: 800 4.5rem 'Tahoma', sans-serif;
+	margin-bottom: 42px;
+
+}
+.link-text__link{
+	text-decoration: underline;
+	background-image: none;
+	margin-top: 6px;
+	font-size: 1.23rem;
+}
+.link-text__text{
+	margin-top: 50px;
+	line-height: 29px;
+	font-size: 17px;
+	letter-spacing: 1.1px;
+}
+li{
+	list-style-type: none;
+}
+
+/*Навигация подвал*/
+
+.footer{
+	margin-bottom: 40px;
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	padding: 5.5rem 0.2rem 0rem 2rem;
+}
+.footer__nav{
+	display: flex;
+
+}
+.nav-item{
+	margin: 0 13px;
+}
+.sign__text{
+	font-size: 14px;
+	margin-right: 25px;
+}
+
+/*Адаптивность*/
+
+@media screen and (max-width: 500px){
+	img{
+		width: 100%
+	}
+	h1.h1-title, h2.section-gallery__title{
+		font-size: 28px
+	}
+	h3, .section-carelia__link-text{
+		font-size: 18px; 
+		width: 80%
+}
+	.header{
+		flex-direction: column; 
+		align-items: center;
+}
+	.header__logo{padding-left: 0
+	}
+	.header__lang{
+		display: none
+}
+	.section-gallery__gallery{
+		display: block;
+}
+	.gallery__photo{
+		margin-bottom: 10px;
+}
+	.main__section-carelia{
+		flex-direction: column;
+		align-items: center;
+}
+	.title-with-photo__title{
+		font-size: 3rem; display: flex; 
+		justify-content: center;
+}
+	.section-carelia__title-with-photo{
+		width: 80%
+}
+	.footer{
+		align-items: center;
+		flex-direction: column;
+	}
+	.footer__nav{
+		flex-flow: wrap row;
+		margin-bottom: 35px;
+	}
+}
