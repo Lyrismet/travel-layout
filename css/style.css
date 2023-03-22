@@ -217,6 +217,9 @@ li{
 	img{
 		width: 100%
 	}
+	.main__section-title{
+		padding: 0 15px;
+	}
 	h1.h1-title, h2.section-gallery__title{
 		font-size: 28px
 	}
