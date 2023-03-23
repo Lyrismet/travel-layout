@@ -207,9 +207,11 @@ li{
 	margin: 0 13px;
 }
 .sign__text{
+	font-family: Allerta;
 	font-size: 14px;
 	margin-right: 25px;
 }
+
 
 /*Адаптивность*/
 
@@ -245,12 +247,13 @@ li{
 	.main__section-carelia{
 		flex-direction: column;
 		align-items: center;
+		margin: 0;
 }
 	.title-with-photo__title{
 		font-size: 3rem; display: flex; 
 		justify-content: center;
 }
-	.section-carelia__title-with-photo{
+	.section-carelia__title-with-photo, .section-gallery__text{
 		width: 80%
 }
 	.footer{
