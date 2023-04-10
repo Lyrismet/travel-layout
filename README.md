@@ -1,3 +1,4 @@
-# lyrismet.traveltorussia.github.io
-Simple layout
+# Simple layout of travel landing
+* Methodology: BEM
+* Tools: HTML, CSS
 <img src="img/screenshot.png">
